@@ -1,40 +1,32 @@
-﻿using System.Text.RegularExpressions;
+﻿Random random = new();
+int daysUntilExpiration = random.Next(12);
+int discountPercentage = 0;
 
-Random dice = new();
-int roll1 = dice.Next(1, 7);
-int roll2 = dice.Next(1, 7);
-int roll3 = dice.Next(1, 7);
-
-int total = 0;
-total += roll1;
-total += roll2;
-total += roll3;
-
-Console.WriteLine($"Dice roll: {roll1} + {roll2} + {roll3} = {total}");
-
-if ((roll1 == roll2) || (roll2 == roll3) || (roll1 == roll3))
+if (daysUntilExpiration <= 10 && daysUntilExpiration > 0)
 {
-    if ((roll1 == roll2) && (roll2 == roll3))
+    Console.WriteLine(daysUntilExpiration);
+    if (daysUntilExpiration == 1)
     {
-        Console.WriteLine("You rolled triples! +6 bonus added!");
-        total += 6;
-        Console.WriteLine(total);
+        Console.WriteLine($"Your subscription expires within a day! Renew now and save 20%!");
+        discountPercentage += 20 / 100;
+        Console.WriteLine(discountPercentage);
     }
-    else
+    else if (daysUntilExpiration > 1 )
     {
-        Console.WriteLine("You rolled doubles!! +2 bonus added!!");
-        total += 2;
-        Console.WriteLine(total);
-    }
+        Console.WriteLine($"Your subscription expires in {daysUntilExpiration} days.\nRenew now and save 10%");
+        discountPercentage += 10 / 100;
+        Console.WriteLine(discountPercentage);
+    } 
 }
-if (total >= 15)
+else if (daysUntilExpiration == 0)
 {
-    Console.WriteLine("You win!");
+    Console.WriteLine("Your subscription has expired.");
+    Console.WriteLine(daysUntilExpiration);
 }
-else
+else 
 {
-    Console.WriteLine("Sorry, you lose!");
+    Console.WriteLine("else");
+    Console.WriteLine(daysUntilExpiration);
 }
-
 
 
