@@ -1,6 +1,7 @@
 ﻿Random random = new();
 int daysUntilExpiration = random.Next(12);
 int discountPercentage = 0;
+daysUntilExpiration = 1;
 
 if (daysUntilExpiration < 11 && daysUntilExpiration != 0)
 {
@@ -28,10 +29,12 @@ else if (daysUntilExpiration == 0)
 } 
 else 
 {
-    //Console.WriteLine("do nothing");
+    Console.WriteLine("do nothing");
 }
 if (discountPercentage > 0)
 {
+    Console.WriteLine(daysUntilExpiration);
+    Console.WriteLine(discountPercentage);
     Console.WriteLine($"Renew now and save {discountPercentage}%.");
 }
 
