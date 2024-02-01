@@ -2,8 +2,6 @@
 int daysUntilExpiration = random.Next(12);
 int discountPercentage = 0;
 
-daysUntilExpiration = 0;
-
 if (daysUntilExpiration < 11 && daysUntilExpiration != 0)
 {
     if (daysUntilExpiration == 1)
