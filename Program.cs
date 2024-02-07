@@ -7,11 +7,14 @@ decimal[] extraCredit = {(92 + 3.68m), (89 + 1.78m), (89 + 5.34m), (96 + 1.92m)}
 int i = 0;
 foreach (string student1 in student)
  {
-    Console.WriteLine($"Studen\t\tExam Score\t\tOverall Grade\tExtra Credit");
-    foreach (decimal examScore1 in examScore)
-    {
-        Console.WriteLine($"{student1[0]}:\t\t{examScore[0]}\t\t\t{overallGrade[0]}\t{letterGrade[0]}\t\t{extraCredit[0]}");
-    }
- }   
+    
+    //Console.WriteLine(student1);
+
+    // foreach (decimal examScore1 in examScore)
+    // {
+    //     Console.WriteLine($"{student}:\t\t{examScore[0]}\t\t{overallGrade[0]}\t{letterGrade[0]}\t\t{extraCredit[0]}");
+    // }
+ } 
+Console.WriteLine($"Student\t\tExam Score\t\tOverall Grade\tExtra Credit");  
 i++;
 Console.WriteLine(i);
