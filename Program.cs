@@ -1,44 +1,36 @@
-﻿// // string[] fraudulentOrderIDs = new string[3];
+﻿string[] names = {"Sophia", "Nicolas", "Zahirah", "Jeong"};
 
-// // fraudulentOrderIDs[0] = "A123";
-// // fraudulentOrderIDs[1] = "B456";
-// // fraudulentOrderIDs[2] = "C789";
-// // //fraudulentOrderIDs[3] = "D000";
+int[] sophiaScores = {93, 87, 98, 95, 100};
+int[] nicolasScores = {80, 83, 82, 88, 85};
+int[] zahirahScores = {84, 96, 73, 85, 79};
+int[] jeongScores = {90, 92, 98, 100, 97};
 
-// string[] fraudulentOrderIDs = {"A123", "B456", "C789"};
-
-// Console.WriteLine($"First: {fraudulentOrderIDs[0]}");
-// Console.WriteLine($"Second: {fraudulentOrderIDs[1]}");
-// Console.WriteLine($"Third: {fraudulentOrderIDs[2]}");
-
-// fraudulentOrderIDs[0] = "F000";
-// Console.WriteLine($"Reassign First: {fraudulentOrderIDs[0]}");
-// Console.WriteLine($"{fraudulentOrderIDs[0]} {fraudulentOrderIDs[1]} {fraudulentOrderIDs[2]}");
-
-// Console.WriteLine($"There are {fraudulentOrderIDs.Length} fraudulent orders processing.");
-
-// using System.Data;
-
-// Console.WriteLine("Iteration Exercise");
-// string[] names = {"Rowena", "Robin", "Bao"};
-// foreach (string name in names)
-// {
-//     Console.WriteLine(name);
-// }
-
-// int[] warehouse = {200, 450, 700, 175, 250};
-// int bin = 0;
-// int sum = 0;
-// foreach (int items in warehouse)
-// {
-//     //Console.WriteLine(items);
-//     bin++;
-//     sum += items;
-//     Console.WriteLine($"In bin {bin} we have {items} items. Running Total: {sum}");
-
-// }
-// Console.WriteLine($"We have {sum} items in the warehouse.");
-
+string[] letterGrade = {"A", "B", "C", "D", "F"};
+int i = 0;
+foreach (name in names)
+{
+   Console.WriteLine($"{name}: ");
+}
+    foreach (score in sophiaScores && nicolasScores && zahirahScores && jeongScores)
+    {
+        if (score >= 90)
+        {
+            Console.WriteLine($"{letterGrade[0]}");
+        }
+        elseif (score >= 80)
+        {
+            Console.WriteLine($"{letterGrade[1]}");
+        }
+        elseif (score >= 70)
+        {
+            Console.WriteLine($"{letterGrade[2]}");
+        }
+        elseif
+        {
+            Console.WriteLine($"Your grade is a D or below. Ask for help and keep studying!");
+        }
+        i++;
+    }
 
 
 
