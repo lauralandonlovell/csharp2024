@@ -3,5 +3,6 @@ int i = 0;
 foreach (string item in chambre2)
 {
    Console.WriteLine(item);
+   i++;
 }
-Console.WriteLine($"There are {i} things in the guest room.");
+Console.WriteLine($"There are {i} things in the guest room. Not counting Laura.");
