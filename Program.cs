@@ -6,6 +6,12 @@ foreach (string item in orderIDs)
 {
   if (item.StartsWith("B"))
   {
-   Console.WriteLine(item);
-  } 
+      Console.WriteLine(item);
+  }
+  if (!item.StartsWith("B"))
+  {
+   Console.WriteLine($"OrderID {item} is not a fraudulent orderID.");
+  }
 }
+
+
