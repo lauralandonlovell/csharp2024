@@ -2,7 +2,7 @@
 int secondValue = 600;
 int largerValue = Math.Max(firstValue, secondValue);
 
-Console.WriteLine(largerValue);
+Console.WriteLine($"The larger of the two values is {largerValue}.");
 
 
 
