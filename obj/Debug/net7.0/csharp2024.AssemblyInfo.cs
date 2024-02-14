@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("csharp2024")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e94c73fde895b01cdf3acf470546e48191fe0f7c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+77fb2a476841074b775c2cc9a75531cf96c8a105")]
 [assembly: System.Reflection.AssemblyProductAttribute("csharp2024")]
 [assembly: System.Reflection.AssemblyTitleAttribute("csharp2024")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
