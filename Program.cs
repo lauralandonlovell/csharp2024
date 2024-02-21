@@ -40,7 +40,7 @@ if (product[2] == "S")
     size = "Medium";
 } else if (product[2] == "L")
 {
-    size = "Large";
+    size = "small";
 } else
 {
     size = "One Size Fits All";
