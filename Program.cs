@@ -23,14 +23,14 @@ do
 }
 Console.WriteLine($"Monster Health: {monsterHealth}");
 Console.WriteLine($"Hero Health: {heroHealth}");
-// if (heroHealth > monsterHealth)
-// {
-//     Console.WriteLine($"Hero has won by {heroHealth - monsterHealth} points!");
-// }
-// else
-// {
-//     Console.WriteLine($"Monster wins by {monsterHealth - heroHealth} points!");
-// }
+if (heroHealth > monsterHealth)
+{
+    Console.WriteLine($"Hero has won by {heroHealth - monsterHealth} points!");
+}
+else
+{
+    Console.WriteLine($"Monster wins by {monsterHealth - heroHealth} points!");
+}
 
 
 
